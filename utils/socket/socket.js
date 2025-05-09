@@ -1,3 +1,3 @@
 import { io } from 'socket.io-client';
 
-export const socket = io('https://fbback-tpzs.onrender.com');
+export const socket = io('https://fb-back-78vb.onrender.com');

